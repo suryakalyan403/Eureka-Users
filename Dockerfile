@@ -15,8 +15,8 @@ COPY ["${JAR_SOURCE}","/opt/eureka-users/eureka-users.jar"]
 #Grant RWX perimissions for this directory
 RUN chmod 777 /opt/eureka-users/
 
-#Expoase port to port 8761 to allow external access to application
-EXPOSE 8761
+#Expoase port to port 8232 to allow external access to application
+EXPOSE 8232
 
 #Specify the cmd to run the Spring Based application using the JAVA JAR File
 CMD ["java", "-jar", "/opt/eureka-users/eureka-users.jar"]
